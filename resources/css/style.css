@@ -17,7 +17,6 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  margin: 0px;
 }
 header img {
   max-height: 50px;
@@ -25,14 +24,13 @@ header img {
 }
 header nav {
   text-align: right;
-  display: inline-block;
   min-width: 500px;
 }
 header nav ul {
 }
 header nav ul li {
   display: inline-block;
-  padding-right: 10px;
+  padding: 0px 10px;
 }
 header nav ul li a {
   color: seashell;
@@ -44,6 +42,9 @@ h2 {
 h4 {
   text-align: center;
 }
+h5 {
+  text-align: center;
+}
 figure {
   display: inline-block;
   margin: 12px;
@@ -52,9 +53,18 @@ figure img {
   width: 300px;
   height: 200px;
 }
-figcaption{
+figcaption {
+  font-weight: bold;
   text-align: center;
   padding-top: 10px;
+}
+.footer {
+  width: 100%;
+  margin: 0px;
+}
+.footer h5 {
+  text-align: left;
+  margin-left: 20px;
 }
 .main {
   display: flex;
@@ -65,15 +75,40 @@ figcaption{
   flex-direction: column;
   z-index: 0px;
 }
-.banner{
+.banner {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
   background-color: black;
   width: 1200px;
 }
 .gallery {
-  width: 1000px;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.contact {
+  height: 200px;
+}
+.boxes {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 20%;
+}
+.box {
+  background-color: black;
+  width: 300px;
+  height: 300px;
+  margin: 0 20px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 #mission {
   background-image: url(../../resources/images/img-mission-background.jpg);
@@ -85,8 +120,32 @@ figcaption{
   align-items: center;
 }
 #featured {
-  margin-top: 50px;
+  margin-top: 60px;
+  width: 1000px;
   display: flex;
   flex-direction: column;
-
+}
+#locations {
+  background-image: url(../../resources/images/img-locations-background.jpg);
+  margin-top: 120px;
+  width: 1200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+#locations h2 {
+  /*margin-bottom: 15;*/
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  bottom: 415px;
+}
+#locations h3 {
+  margin: 0px 0px 50px 0px;
+}
+#locations p {
+  margin: 4px 0px;
 }

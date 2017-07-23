@@ -6,6 +6,7 @@ body {
   opacity: 0.9;
 }
 header {
+  background-color: black;
   border-bottom: 1px solid seashell;
   height: 69px;
   position: fixed;
@@ -16,6 +17,7 @@ header {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  margin: 0px;
 }
 header img {
   max-height: 50px;
@@ -35,4 +37,56 @@ header nav ul li {
 header nav ul li a {
   color: seashell;
   opacity: 0.9;
+}
+h2 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+figure {
+  display: inline-block;
+  margin: 12px;
+}
+figure img {
+  width: 300px;
+  height: 200px;
+}
+figcaption{
+  text-align: center;
+  padding-top: 10px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 62px;
+  flex-direction: column;
+  z-index: 0px;
+}
+.banner{
+  background-color: black;
+  width: 1200px;
+}
+.gallery {
+  width: 1000px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#mission {
+  background-image: url(../../resources/images/img-mission-background.jpg);
+  margin: 0px;
+  padding: 0px;
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+}
+#featured {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
 }
